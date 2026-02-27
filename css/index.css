@@ -486,7 +486,7 @@ header{
 @media (max-width:640px) {
 
     .header_container{
-        width: 70%;
+        width: 90%;
         height: max-content;
         display: flex;
         height: max-content;
