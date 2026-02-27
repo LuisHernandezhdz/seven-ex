@@ -491,6 +491,9 @@ header{
         background-color: transparent;
       
     }
+    .header_menu{
+        gap: 15px;
+    }
 
     .header_img_icon_mobile{
         width:70%;  
