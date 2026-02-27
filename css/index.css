@@ -60,7 +60,7 @@ header{
 
 .header_container{
     display: flex;
-    background-color: rgba(236, 236, 236, 0.089);
+    background-color: rgba(236, 236, 236, 0.226);
     color: white;
     width: 22%;
     border-radius: 40px;
@@ -68,7 +68,10 @@ header{
     padding: 5px 25px;
     margin: 0 auto;
     z-index: 3;
-    position: relative;
+    position: fixed;
+    margin-top: 15px;
+     left: 50%;
+    transform: translateX(-50%);
 }
 .header_img_icon{
     width: 40px;
@@ -484,19 +487,19 @@ header{
 
     .header_container{
         width: 70%;
+        height: max-content;
         display: flex;
         height: max-content;
-        padding: 20px 10px;
+        padding: 4px 10px;
         justify-content: center;
-        background-color: transparent;
-      
+        
     }
     .header_menu{
         gap: 15px;
     }
 
     .header_img_icon_mobile{
-        width:70%;  
+        width:80%;  
           margin: 0 auto;   
     }
     .text_video{
