@@ -616,14 +616,171 @@ header{
     }
 
     .final h1{
-        font-size: 3rem;
+        font-size: 10vw;
         text-align: center;
     }
     .subtitle.fin{
         font-size: 1.3rem;
         text-align: center;
     }
-    .evento h1{
-        font-size: 1rem;
+   
+}
+
+
+/*Formato de celulares*/
+@media (max-width:768px) {
+
+    .header_container{
+        width: 55%;
+        height: max-content;
+        display: flex;
+        height: max-content;
+        padding: 0px 10px;
+        justify-content: center;
+        
     }
+    .header_menu{
+        gap: 15px;
+    }
+
+    .header_img_icon_mobile{
+        width:80%;  
+          margin: 0 auto;   
+    }
+    .text_video{
+        padding: 0;
+    }
+    .text_video h1{
+        font-size: 3rem !important;
+        line-height: 1.2;
+        text-align: center;
+    }
+    .buttons{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .cotizar,.servicios{
+        font-size: 1rem !important;
+        padding: 15px 15px;
+    }
+
+    .section_nosotros{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .left,.right{
+        width: 100%;
+        padding: 0;
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicio-estrella{
+    margin-top:120px !important;
+    padding:60px 7%;
+    margin: 0 auto;
+    background:radial-gradient(circle at bottom, #ece6e4 0%, #080808 60%);
+}
+
+    .estrella-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .final h1{
+        font-size: 7vw;
+        text-align: center;
+    }
+    .subtitle.fin{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+   
+}
+
+/*Formato de celulares*/
+@media (max-width:1024px) {
+
+    .header_container{
+        width: 55%;
+        height: max-content;
+        display: flex;
+        height: max-content;
+        padding: 0px 10px;
+        justify-content: center;
+        
+    }
+    .header_menu{
+        gap: 15px;
+    }
+
+    .header_img_icon_mobile{
+        width:80%;  
+          margin: 0 auto;   
+    }
+    .text_video{
+        padding: 0;
+    }
+    .text_video h1{
+        font-size: 3rem !important;
+        line-height: 1.2;
+        text-align: center;
+    }
+    .buttons{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .cotizar,.servicios{
+        font-size: 1rem !important;
+        padding: 15px 15px;
+    }
+
+    .section_nosotros{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .left,.right{
+        width: 100%;
+        padding: 0;
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicio-estrella{
+    margin-top:120px !important;
+    padding:60px 7%;
+    margin: 0 auto;
+    background:radial-gradient(circle at bottom, #ece6e4 0%, #080808 60%);
+}
+
+    .estrella-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .final h1{
+        font-size: 7vw;
+        text-align: center;
+    }
+    .subtitle.fin{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+   
 }
