@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Poppins'; /* Nombre que usarás después */
+  src: url('../assets/fuente/poppins/Poppins-Regular.ttf') format('truetype'); /* Ruta al archivo y formato */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins_subtitle'; /* Nombre que usarás después */
+  src: url('../assets/fuente/poppins/Poppins-Regular.ttf') format('truetype'); /* Ruta al archivo y formato */
+  font-weight: 600;
+  font-style: normal;
+}

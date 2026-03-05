@@ -1,15 +1,25 @@
+@import url("fuentes.css");
+
 :root{
     --color-logo :#ee6f68;
     --color-hover:#eb8f8ab7;
+   
 }
 
+.hero-title,
+.hero-subtitle,
+.split,
+.banner-subtitle{
+  opacity: 0 ;
+    transform: translateY(20px); /* opcional, un poco de offset inicial */
+}
 html {
   scroll-behavior:smooth;
 }
 
 body{
     background-color: black;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     overflow-x:hidden;
 }
@@ -33,17 +43,28 @@ a:visited{
 
 h1{
     font-size:64px;
-    font-weight:800;
     margin-bottom:20px;
     color: white;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
 }
 
 h1 span{
     color:var(--color-logo);
 }
 
+h2{
+    font-size:42px;
+    font-weight:700;
+    color:white;
+    margin-bottom:20px;
+}
+
 h3{
-    color: white;
+    color:white;
+    font-weight:600;
+    font-size:20px;
+    margin-bottom:10px;
 }
 
 
@@ -65,7 +86,7 @@ header{
     width: 22%;
     border-radius: 40px;
     justify-content: center;
-    padding: 5px 25px;
+    padding: 0px 25px;
     margin: 0 auto;
     z-index: 3;
     position: fixed;
@@ -84,11 +105,38 @@ header{
     align-items: center;
     font-weight: 500;
 }
+
+.menu_li{
+    position: relative;
+}
+.menu_li::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+.menu_li:hover::after {
+  transform: scaleX(1); /* Se expande al poner el mouse encima */
+}
+
+
 .menu_cotizar{
     border-radius: 10px;
     background-color: var(--color-logo);
     padding: 10px 20px;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease; /* Smooth transition */
+}
+.menu_cotizar:hover{
+    translate: calc(scaleX);
 }
 
 /*Presentacion*/
@@ -132,12 +180,25 @@ header{
     padding: 20px 60px;
 }
 .text_video h1{
-    font-size:initial;
-    font-size: 4rem !important;
+    font-size:4rem !important;
+    line-height:1.1;
+}
+
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
 }
 .buttons button{
     font-size: 1.1rem;
 }
+
+.cotizar,
+.servicios,
+.btn-estrella{
+    font-weight:500 !important;
+}
+
 .cotizar{
     appearance: none;
     -webkit-appearance: none;
@@ -170,15 +231,18 @@ header{
 
 
 .subtitle{
-    font-size:22px;
+      font-size:22px;
     color:#d0d0d0;
     margin-bottom:25px;
+    font-weight:400;
 }
 
 .description{
     color:#9aa4b2;
     line-height:1.6;
     margin-bottom:40px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400px;
 }
 
 .image-box{
@@ -236,9 +300,10 @@ header{
 }
 
 .card p{
-    color:#9aa4b2;
+   color:#9aa4b2;
     font-size:14px;
     line-height:1.6;
+    font-weight:400;
 }
 
 /*Eventos Grid*/
@@ -557,5 +622,8 @@ header{
     .subtitle.fin{
         font-size: 1.3rem;
         text-align: center;
+    }
+    .evento h1{
+        font-size: 1rem;
     }
 }
